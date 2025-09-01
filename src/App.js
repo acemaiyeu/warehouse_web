@@ -9,11 +9,13 @@ function App() {
       <header className="App-header">
         {/* <ContainerComponent /> */}
          <Router>
-          <nav>
+          <nav className="navigion-menu">
             <Link to="/">Homes</Link> | <Link to="/about">About</Link>
           </nav>
           <Switch>
-            <Route path="/" exact component={ ContainerComponent} />
+            <div className="contents">
+              <Route path="/" exact component={ ContainerComponent} />
+            </div>
             {/* <Route path="/about" component={About} /> */}
           </Switch>
         </Router>

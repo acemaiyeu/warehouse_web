@@ -22,10 +22,18 @@ const LoginComponent = () => {
 
     try {
       // Gửi yêu cầu POST bằng axios đến điểm cuối đăng nhập
-      const response = await api.post("/login", {
-        email,
-        password,
-      });
+      const response = await api.post(
+            "/login",
+            {
+              email,
+              password,
+            },
+            {
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
 
       // Nếu đăng nhập thành công, hiển thị thông báo và lưu token
       setMessage("Đăng nhập thành công!");

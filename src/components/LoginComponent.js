@@ -11,7 +11,7 @@ const LoginComponent = () => {
 
   // Tạo một instance Axios với URL cơ sở (base URL) cho API
   const api = axios.create({
-    baseURL: "http://localhost:8000/api/auth",
+    baseURL: "https://4967b5a38b8e.ngrok-free.app/api/auth",
   });
 
   // Hàm xử lý khi người dùng gửi form đăng nhập

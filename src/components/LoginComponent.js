@@ -43,6 +43,7 @@ const LoginComponent = () => {
       console.log("Token đã được lưu:", response.data.access_token);
     } catch (error) {
       // Xử lý lỗi từ server hoặc lỗi kết nối
+      console.log("Lỗi khi đăng nhập:", error);
       if (error.response) {
         // Lỗi từ server (ví dụ: email hoặc mật khẩu không đúng)
         setMessage(
